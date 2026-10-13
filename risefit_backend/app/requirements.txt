@@ -1,0 +1,9 @@
+# ─── Computer Vision dependencies ───────────────────────────────────────────
+# YOLO pose estimation (includes torch dependency)
+ultralytics>=8.0.0
+
+# Frame processing & image I/O
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# ─── (Existing dependencies — tambahkan di bawah ini) ───────────────────────

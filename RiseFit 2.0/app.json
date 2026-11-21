@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "RiseFit",
+    "slug": "risefit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "risefit",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.risefit.app",
+      "icon": "./assets/images/icon.png"
+    },
+    "android": {
+      "package": "com.risefit.app",
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#0F5B4F",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png",
+      "name": "RiseFit"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0F5B4F",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 112
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "RiseFit memakai kamera untuk membaca postur dan menghitung gerakan olahragamu secara otomatis.",
+          "recordAudioAndroid": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
